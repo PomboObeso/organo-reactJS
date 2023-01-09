@@ -4,7 +4,7 @@ import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css';
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const times = [
         'Programação',
@@ -22,7 +22,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault();
-        console.log('Submit done => ',nome,cargo,imagem, time);
+        props.cadastroColaborador({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
     }
 
     return (
