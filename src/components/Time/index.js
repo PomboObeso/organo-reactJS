@@ -4,7 +4,7 @@ import './Time.css'
 const Time = (props) => {
 
     const css = { backgroundColor: props.corSecundaria }
-
+    // Posteriormente implementar algo que mostre algo alternativo quando a seção estiver vazia com um ternario ? :
     return (
         props.colaboradores.length > 0 && 
         <section className='time' style={css}>
