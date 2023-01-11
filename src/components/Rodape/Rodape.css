@@ -1,0 +1,21 @@
+.rodape {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6278f7;
+    padding: 2rem 0;
+    background-image: url('../../../public/img/fundo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100%;
+}
+
+.social-medias img{
+    margin-right: 2.5rem;
+}
+
+.copyright p {
+    color: #fff;
+    font-size: 1.2rem;
+}
