@@ -16,3 +16,8 @@
     margin-top: 32px;
     flex-wrap: wrap;
 }
+
+.info {
+    font-size: 2rem;
+    font-style: italic;
+}
