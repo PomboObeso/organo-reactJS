@@ -6,7 +6,7 @@ const Time = (props) => {
     const css = { backgroundColor: props.corSecundaria }
     // Posteriormente implementar algo que mostre algo alternativo quando a seção estiver vazia com um ternario ? :
     return (
-        props.colaboradores.length > 0 && 
+        props.colaboradores.length > 0 ? 
         <section className='time' style={css}>
             <h3 style={{borderColor:props.corPrimaria}} >{props.nome}</h3>
             <div className='colaboradores'>
@@ -20,6 +20,11 @@ const Time = (props) => {
                     />)
                 }
             </div>
+        </section>
+        : 
+        <section className='time' style={css}>
+            <h3 style={{borderColor:props.corPrimaria}} >{props.nome}</h3>
+            <p className='info'>Está seção ainda não possui colaboradores.</p>
         </section>
     )
 }
